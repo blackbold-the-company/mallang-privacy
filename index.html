@@ -1,177 +1,321 @@
 <!doctype html>
 <html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>말랑수비대 개인정보처리방침</title>
-<style>
-  :root { --ink:#2E2432; --bg:#FBF7F0; --line:#E6DED2; --muted:#6B6270; }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-         font:16px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 80px; }
-  h1 { font-size: 26px; margin: 0 0 6px; }
-  h2 { font-size: 19px; margin: 36px 0 10px; padding-top: 18px; border-top: 1px solid var(--line); }
-  .meta { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
-  .lead { background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin:24px 0; }
-  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
-  th,td { border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top; }
-  th { background:#F3EDE4; font-weight:600; }
-  ul { padding-left: 20px; }
-  li { margin: 5px 0; }
-  code { background:#F3EDE4; padding:1px 5px; border-radius:4px; font-size:14px; }
-  .lang { margin-top:64px; }
-  footer { margin-top:56px; padding-top:18px; border-top:1px solid var(--line);
-           color:var(--muted); font-size:14px; }
-  a { color:#2563EB; }
-</style>
-</head>
-<body>
-<main>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="robots"
+      content="noindex, nofollow, noarchive, nosnippet, max-image-preview:none"
+    />
+    <meta
+      name="googlebot"
+      content="noindex, nofollow, noarchive, nosnippet, max-image-preview:none"
+    />
+    <meta name="referrer" content="no-referrer" />
+    <link
+      rel="canonical"
+      href="https://blackbold-the-company.github.io/mallang-privacy/"
+    />
+    <title>말랑수비대 개인정보처리방침</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #252038;
+        --muted: #686278;
+        --paper: #fffdf8;
+        --line: #e9e2d6;
+        --accent: #6b55d9;
+        --accent-soft: #f1edff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(
+          180deg,
+          #f7f3ff 0,
+          #fff9eb 280px,
+          var(--paper) 100%
+        );
+        color: var(--ink);
+        font:
+          16px/1.72 -apple-system,
+          BlinkMacSystemFont,
+          "Apple SD Gothic Neo",
+          "Malgun Gothic",
+          sans-serif;
+      }
+      main {
+        width: min(760px, 100%);
+        margin: 0 auto;
+        padding: 48px 22px 80px;
+      }
+      .eyebrow {
+        color: var(--accent);
+        font-weight: 800;
+        letter-spacing: 0.02em;
+      }
+      h1 {
+        margin: 8px 0 6px;
+        font-size: clamp(28px, 6vw, 40px);
+        line-height: 1.18;
+        letter-spacing: -0.045em;
+      }
+      h2 {
+        margin: 38px 0 10px;
+        padding-top: 22px;
+        border-top: 1px solid var(--line);
+        font-size: 20px;
+      }
+      p {
+        margin: 10px 0;
+      }
+      .meta {
+        margin: 0 0 26px;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .summary {
+        padding: 20px;
+        border: 1px solid #ded6ff;
+        border-radius: 18px;
+        background: var(--accent-soft);
+      }
+      .summary strong {
+        color: #4331a2;
+      }
+      table {
+        width: 100%;
+        margin: 16px 0;
+        border-collapse: collapse;
+        font-size: 15px;
+      }
+      th,
+      td {
+        padding: 11px 12px;
+        border: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+      th {
+        background: #f7f3eb;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      .lang {
+        margin-top: 76px;
+      }
+      footer {
+        margin-top: 52px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">말랑수비대 · 모바일 앱</p>
+      <h1>개인정보처리방침</h1>
+      <p class="meta">시행일 및 최종 수정일: 2026년 8월 31일</p>
 
-<h1>말랑수비대 개인정보처리방침</h1>
-<p class="meta">시행일: 2026년 8월 16일 · 최종 수정일: 2026년 8월 16일</p>
+      <section class="summary" aria-label="핵심 요약">
+        <strong>핵심 요약</strong>
+        <p>
+          말랑수비대는 로그인이나 회원가입이 없으며, 이용자를 식별할 수 있는
+          개인정보를 수집하지 않습니다. 게임 진행 정보와 설정은 이용자의
+          기기에만 저장되고 운영자 서버로 전송되지 않습니다.
+        </p>
+      </section>
 
-<div class="lead">
-  <strong>요약.</strong> 말랑수비대는 이용자를 식별할 수 있는 개인정보를 <strong>수집하지 않습니다.</strong>
-  게임 진행 정보는 이용자의 기기 안에만 저장되며 저희 서버로 전송되지 않습니다.
-  저희는 게임 데이터를 보관하는 서버를 운영하지 않습니다.
-</div>
+      <h2>1. 적용 범위</h2>
+      <p>
+        이 방침은 Google Play 및 App Store에 배포되는 말랑수비대 모바일 앱에
+        적용됩니다. 이 방침 페이지에는 광고·분석 스크립트가 포함되어 있지
+        않습니다.
+      </p>
 
-<h2>1. 처리하는 정보</h2>
-<p>말랑수비대는 회원가입이 없으며, 이름·연락처·이메일·생년월일·위치 등
-<strong>개인을 식별할 수 있는 정보를 요구하지도, 수집하지도 않습니다.</strong></p>
+      <h2>2. 앱에서 처리하는 정보</h2>
+      <p>
+        앱은 이름, 이메일 주소, 전화번호, 생년월일, 위치, 연락처, 사진 또는 계정
+        정보를 요구하거나 수집하지 않습니다.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>기기 안에 저장되는 정보</th>
+            <th>이용 목적</th>
+            <th>외부 전송</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>게임 진행, 보유 캐릭터, 재화</td>
+            <td>이어하기</td>
+            <td>없음</td>
+          </tr>
+          <tr>
+            <td>소리 등 이용자 설정</td>
+            <td>설정 유지</td>
+            <td>없음</td>
+          </tr>
+          <tr>
+            <td>앱이 임의로 만든 로컬 식별값</td>
+            <td>같은 기기의 저장 데이터 구분</td>
+            <td>없음</td>
+          </tr>
+        </tbody>
+      </table>
 
-<table>
-  <tr><th>정보</th><th>저장 위치</th><th>목적</th><th>외부 전송</th></tr>
-  <tr><td>게임 진행 데이터<br>(층수, 보유 캐릭터, 재화, 설정)</td><td>기기 내 저장소</td><td>게임 이어하기</td><td>없음</td></tr>
-  <tr><td>소리 끔 설정</td><td>기기 내 저장소</td><td>설정 유지</td><td>없음</td></tr>
-  <tr><td>기기 내부 임의 식별값<br><code>anon-…</code></td><td>기기 내 저장소</td><td>같은 기기에서 저장 데이터를 구분</td><td>없음</td></tr>
-</table>
+      <h2>3. 로그인과 서버</h2>
+      <p>
+        회원가입과 로그인이 없으며, 이용자 데이터를 보관하는 운영자 서버도
+        없습니다. 앱을 삭제하면 기기에 저장된 게임 데이터도 함께 삭제될 수
+        있습니다.
+      </p>
 
-<p>기기 내부 임의 식별값은 앱이 기기에서 무작위로 만든 문자열이며,
-이용자의 실제 신원과 연결되지 않고 외부로 전송되지 않습니다.</p>
+      <h2>4. 광고</h2>
+      <p>
+        현재 배포 대상 앱에는 실제 광고 네트워크 SDK가 연결되어 있지 않습니다.
+        앱 안의 광고 화면은 기능 흐름을 보여주는 로컬 샘플 화면이며 광고
+        식별자나 기기 정보를 읽거나 외부로 전송하지 않습니다.
+      </p>
+      <p>
+        향후 실제 광고 또는 분석 서비스를 연결하는 경우, 배포 전에 이 방침과
+        스토어의 데이터 보안 신고를 실제 처리 내용에 맞게 갱신하겠습니다.
+      </p>
 
-<h2>2. 광고</h2>
-<p>말랑수비대는 게임을 무료로 제공하기 위해 광고를 표시합니다.
-광고는 <strong>Google AdMob</strong>을 통해 제공되며, 이 과정에서 AdMob이
-광고 식별자와 기기·네트워크 정보를 처리할 수 있습니다. 이는 저희가 아니라
-<strong>Google이 자체 방침에 따라 처리</strong>하는 정보입니다.</p>
-<ul>
-  <li>저희는 <strong>맞춤형(개인 맞춤) 광고를 사용하지 않습니다.</strong>
-      모든 광고 요청을 <strong>비개인화 광고</strong>로 설정합니다.</li>
-  <li>모든 광고 요청에 <strong>전체 이용가 등급(G)</strong>을 적용해
-      선정적·폭력적·도박성 광고가 노출되지 않도록 제한합니다.</li>
-  <li>저희는 광고 식별자를 <strong>수집하거나 저장하거나 열람하지 않습니다.</strong></li>
-</ul>
-<p>Google의 처리 내용은
-<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">
-Google 파트너 사이트 정책</a>에서 확인하실 수 있습니다.</p>
+      <h2>5. 제3자 제공 및 처리위탁</h2>
+      <p>
+        운영자가 수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를
+        위탁하는 개인정보도 없습니다.
+      </p>
 
-<h2>3. 아동 보호</h2>
-<p>말랑수비대는 <strong>만 13세 이상</strong>을 대상으로 합니다.
-저희는 아동으로부터 개인정보를 고의로 수집하지 않으며, 실제로
-<strong>어떤 이용자로부터도 개인정보를 수집하지 않습니다.</strong>
-비개인화 광고와 전체 이용가 광고 등급을 적용하는 것도 같은 이유입니다.</p>
+      <h2>6. 아동 및 청소년 보호</h2>
+      <p>
+        말랑수비대는 만 13세 이상 이용자를 대상으로 하며, 아동을 포함한 어떤
+        이용자로부터도 개인정보를 고의로 수집하지 않습니다.
+      </p>
 
-<h2>4. 제3자 제공 및 위탁</h2>
-<p>저희가 수집하는 개인정보가 없으므로 제3자에게 제공하거나 처리를 위탁하는 개인정보도 없습니다.
-광고 표시를 위해 Google AdMob이 사용되며, 이는 위 2항에 기재된 범위에 한합니다.</p>
+      <h2>7. 이용자의 권리와 문의</h2>
+      <p>
+        운영자가 보관하는 이용자 개인정보가 없으므로 운영자에게 열람·정정·삭제를
+        요청할 대상도 없습니다. 앱 데이터는 기기에서 앱을 삭제하여 제거할 수
+        있습니다.
+      </p>
+      <p>개인정보 관련 문의: <strong>BlackBold · hello@blackbold.kr</strong></p>
 
-<h2>5. 보관 및 파기</h2>
-<p>모든 데이터는 이용자의 기기 안에만 있습니다.
-<strong>앱을 삭제하면 함께 삭제됩니다.</strong>
-저희가 별도로 보관하는 이용자 데이터가 없으므로 파기 절차도 없습니다.</p>
+      <h2>8. 방침 변경</h2>
+      <p>
+        수집 항목이나 외부 서비스가 추가되는 등 처리 내용이 바뀌면 시행 전에 이
+        페이지의 내용과 최종 수정일을 갱신합니다.
+      </p>
 
-<h2>6. 이용자의 권리</h2>
-<p>저희가 보관하는 이용자 정보가 없으므로 열람·정정·삭제를 요청하실 대상이 없습니다.
-기기에 저장된 게임 데이터는 앱을 삭제하시면 즉시 사라집니다.
-광고 식별자는 기기 설정에서 직접 초기화하거나 맞춤 광고를 끄실 수 있습니다.</p>
-<ul>
-  <li>Android: 설정 → Google → 광고</li>
-  <li>iOS: 설정 → 개인정보 보호 및 보안 → 추적</li>
-</ul>
+      <section class="lang" lang="en">
+        <p class="eyebrow">Mallang Defenders · Mobile App</p>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Effective and last updated: August 31, 2026</p>
 
-<h2>7. 안전성 확보 조치</h2>
-<p>말랑수비대는 <strong>이용자 데이터를 서버로 전송하지 않습니다.</strong>
-전송이 없으므로 전송 구간에서 유출될 위험이 없고, 보관하는 서버가 없으므로
-서버 침해로 이용자 데이터가 유출될 위험도 없습니다.</p>
+        <section class="summary" aria-label="Summary">
+          <strong>Summary</strong>
+          <p>
+            Mallang Defenders has no account or sign-in and does not collect
+            personally identifiable information. Game progress and preferences
+            stay on the user's device and are not sent to an operator server.
+          </p>
+        </section>
 
-<h2>8. 방침 변경</h2>
-<p>이 방침이 변경되면 이 페이지에 변경 내용과 시행일을 게시합니다.
-수집 항목이 늘어나는 등 이용자에게 불리한 변경이 있을 경우 앱 안에서 별도로 안내합니다.</p>
+        <h2>1. Scope</h2>
+        <p>
+          This policy applies to the Mallang Defenders mobile app distributed
+          through Google Play and the App Store. This policy page contains no
+          advertising or analytics scripts.
+        </p>
 
-<h2>9. 문의처</h2>
-<p>개인정보 관련 문의는 아래로 연락해 주세요.</p>
-<table>
-  <tr><th>운영자</th><td>블랙볼드 (BlackBold)</td></tr>
-  <tr><th>이메일</th><td>hello@blackbold.kr</td></tr>
-</table>
+        <h2>2. Information processed by the app</h2>
+        <p>
+          The app does not request or collect names, email addresses, phone
+          numbers, dates of birth, location, contacts, photos, or account
+          information.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Stored on the device</th>
+              <th>Purpose</th>
+              <th>Sent off device</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Game progress, collected characters, game currency</td>
+              <td>Resume play</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Sound and other preferences</td>
+              <td>Keep settings</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Random local identifier created by the app</td>
+              <td>Distinguish saved data on the same device</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
 
-<div class="lang">
-<h1>Privacy Policy — Mallang Defenders</h1>
-<p class="meta">Effective: 2026-08-16 · Last updated: 2026-08-16</p>
+        <h2>3. Accounts and servers</h2>
+        <p>
+          There is no registration or sign-in, and the operator does not run a
+          server that stores user data. Deleting the app may also delete its
+          locally stored game data.
+        </p>
 
-<div class="lead">
-  <strong>Summary.</strong> Mallang Defenders does <strong>not collect any personally
-  identifiable information.</strong> All game data stays on your device and is never
-  transmitted to us. We do not operate a server that stores user data.
-</div>
+        <h2>4. Advertising</h2>
+        <p>
+          The current release candidate does not include a live advertising
+          network SDK. Its advertising screen is a local sample used to
+          demonstrate the game flow; it does not read or transmit an advertising
+          identifier or device information.
+        </p>
+        <p>
+          If live advertising or analytics is added later, this policy and the
+          store data-safety declarations will be updated before distribution.
+        </p>
 
-<h2>1. Information we process</h2>
-<p>There is no sign-up. We do not request or collect names, contact details, email
-addresses, dates of birth, or location data.</p>
-<table>
-  <tr><th>Data</th><th>Stored</th><th>Purpose</th><th>Sent off device</th></tr>
-  <tr><td>Game progress (stage, characters, currency, settings)</td><td>On device</td><td>Resume play</td><td>No</td></tr>
-  <tr><td>Mute setting</td><td>On device</td><td>Persist preference</td><td>No</td></tr>
-  <tr><td>Local random identifier (<code>anon-…</code>)</td><td>On device</td><td>Distinguish saves on the same device</td><td>No</td></tr>
-</table>
+        <h2>5. Sharing and processors</h2>
+        <p>
+          The operator collects no personal information, so there is no personal
+          information to share with third parties or entrust to a processor.
+        </p>
 
-<h2>2. Advertising</h2>
-<p>We show ads through <strong>Google AdMob</strong> to keep the game free. AdMob may
-process an advertising identifier and device/network information. That processing is
-performed by <strong>Google under its own policies</strong>, not by us.</p>
-<ul>
-  <li>We request <strong>non-personalized ads only.</strong></li>
-  <li>We set the maximum ad content rating to <strong>G (General audiences).</strong></li>
-  <li>We do not collect, store, or access advertising identifiers.</li>
-</ul>
+        <h2>6. Children and teenagers</h2>
+        <p>
+          Mallang Defenders is intended for users aged 13 and older. We do not
+          knowingly collect personal information from children or from any other
+          user.
+        </p>
 
-<h2>3. Children</h2>
-<p>Mallang Defenders is intended for users aged <strong>13 and older</strong>. We do not
-knowingly collect personal information from children — in fact we collect no personal
-information from any user.</p>
+        <h2>7. Your rights and contact</h2>
+        <p>
+          Because the operator holds no user personal information, there is
+          nothing on the operator's side to access, correct, or erase. App data
+          can be removed from the device by deleting the app.
+        </p>
+        <p>Privacy contact: <strong>BlackBold · hello@blackbold.kr</strong></p>
 
-<h2>4. Sharing</h2>
-<p>We collect no personal information, so there is none to share or transfer.
-Google AdMob is used solely as described in section 2.</p>
+        <h2>8. Changes</h2>
+        <p>
+          If data collection or an external service is added, this page and its
+          last-updated date will be revised before the change is distributed.
+        </p>
+      </section>
 
-<h2>5. Retention and deletion</h2>
-<p>All data lives on your device. <strong>Deleting the app deletes it.</strong>
-We hold no user data, so there is nothing for us to delete.</p>
-
-<h2>6. Your rights</h2>
-<p>Because we hold no user data, there is nothing to access, correct, or erase on our side.
-You can reset or limit your advertising identifier in your device settings
-(Android: Settings → Google → Ads · iOS: Settings → Privacy &amp; Security → Tracking).</p>
-
-<h2>7. Security</h2>
-<p>The app does not transmit user data to any server. With no transmission and no storage
-on our side, there is no server-side breach path for user data.</p>
-
-<h2>8. Changes</h2>
-<p>Any change will be posted on this page with its effective date. If a change is
-unfavourable to users, we will also notify inside the app.</p>
-
-<h2>9. Contact</h2>
-<p>BlackBold — hello@blackbold.kr</p>
-</div>
-
-<footer>
-  © 2026 BlackBold. 말랑수비대 / Mallang Defenders.
-</footer>
-
-</main>
-</body>
+      <footer>© 2026 BlackBold. 말랑수비대 / Mallang Defenders.</footer>
+    </main>
+  </body>
 </html>
