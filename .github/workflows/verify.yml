@@ -1,0 +1,39 @@
+name: verify
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  privacy-page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify public privacy page boundaries
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          page = Path("index.html").read_text(encoding="utf-8")
+          compact = " ".join(page.split())
+
+          required = (
+              'content="noindex, nofollow, noarchive, nosnippet, max-image-preview:none"',
+              'href="https://blackbold-the-company.github.io/mallang-privacy/"',
+              "말랑수비대 · 모바일 앱",
+              "실제 광고 네트워크 SDK가 연결되어 있지 않습니다",
+              "This policy page contains no advertising or analytics scripts.",
+          )
+          forbidden = ("gomallang", "Google AdMob", "<script", "/Users/", "/private/")
+
+          for marker in required:
+              if marker not in compact:
+                  raise SystemExit(f"required marker missing: {marker}")
+          for marker in forbidden:
+              if marker.lower() in page.lower():
+                  raise SystemExit(f"forbidden marker found: {marker}")
+          PY
